@@ -94,7 +94,8 @@ $sendLocationButton.addEventListener('click', () => {
                 username : message.username,
                 url: message.url,
                 createdAt : moment(message.createdAt).format('hh:mm a'), 
-                location : message.location})
+                location : message.location
+            })
             $messages.insertAdjacentHTML('beforeend',html);
             autoscroll();
         })
